@@ -8,20 +8,24 @@
   </head>
   <body>
     <form action="" method="post">
+      {% csrf_token %}
       <label for=""><b>for patient</b></label
       ><br />
       <label for="">Username</label>
       <input type="text" name="usernamep" id="usernamep" /><br />
       <label for="">Password</label>
       <input type="password" name="passp" id="passp" />
+      <button type="submit" name="btnp">login</button>
     </form>
     <form action="" method="post">
+      {% csrf_token %}
       <label for=""><b>for doctor</b></label
       ><br />
       <label for="">Username</label>
       <input type="text" name="usernamed" id="usernamed" /><br />
       <label for="">Password</label>
       <input type="password" name="passd" id="passd" />
+      <button type="submit" name="btnd">login</button>
     </form>
   </body>
 </html>
