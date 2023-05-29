@@ -20,3 +20,7 @@ def home(request):
 
 def patient(request):
     return render(request, "patient.html")
+
+
+def register(request):
+    return render(request, "register.html")
